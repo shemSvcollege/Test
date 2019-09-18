@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  
+}
+
+.input{
+  width: 60%;
+  /* height: 35px; */
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%; 
+  direction: rtl;
+  border:1px solid black; 
+}
+
+#pass{
+  /* margin-left: auto; */
+  background-color: black;
+  color: whitesmoke;
+}
+
+.btn{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.svcollegeColor {
+  background-color: #61dafb;
+}
+
+.imageLogo{
+  margin: 30%;
+}
+
+.card{
+  background-color: lightgray;
+}
+
+.bottom{
+  background-color: orangered;
+  
+  /* background-color: black; */
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2%;
+  color: white;
+  direction: rtl;
+}
+
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+
+.titleOfQ{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: auto; */
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.answerOfQ{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* margin: auto; */
+  margin-bottom: 5%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 26px;
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* background-color: rgb(216, 216, 216); */
+  background-color: whitesmoke;
+  color: black;
+}
+
+.answerOfQ:active{
+
+  background-color: rgb(230, 103, 0);
+}
+
+.boldText {
+  font-weight: bolder;
+}
