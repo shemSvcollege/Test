@@ -6,6 +6,7 @@ import Register from './components/Register';
 import PieChart from './components/PieChart';
 import Bottom from './components/Bottom';
 import Introduction from './components/Introduction';
+import {HashRouter as Router , Route , Switch} from 'react-router-dom'
 import {mat} from './QuestionsRep/Repository'
 export default class App extends Component {
   
@@ -122,9 +123,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Router>
         <Header />
         {this.show()}
         <Bottom />
+        </Router>
       </div>
     )
   }

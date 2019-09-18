@@ -2,6 +2,7 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "shemSvcollege/github.io/test",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "cake-chart": "^0.2.3",
@@ -16,6 +17,7 @@
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
