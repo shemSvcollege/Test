@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Pie,Doughnut} from 'react-chartjs-2';
+import {Pie,Doughnut,Bar} from 'react-chartjs-2';
 
 export default class PieChart extends Component {
     
@@ -121,7 +121,7 @@ export default class PieChart extends Component {
         return (
             <div>
                 <h1 style={{marginTop:'5%'}} className='App'>תוצאות המבחן</h1>
-                <Pie 
+                <Bar 
                 data={{
                     labels:this.state.labels,
                     datasets:this.state.datasets
