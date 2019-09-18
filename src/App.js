@@ -123,11 +123,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        
         <Header />
         {this.show()}
         <Bottom />
-        </Router>
+        
       </div>
     )
   }

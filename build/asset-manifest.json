@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "shemSvcollege/github.io/test/static/css/main.af913e6d.chunk.css",
-    "main.js": "shemSvcollege/github.io/test/static/js/main.b2988950.chunk.js",
-    "main.js.map": "shemSvcollege/github.io/test/static/js/main.b2988950.chunk.js.map",
-    "runtime~main.js": "shemSvcollege/github.io/test/static/js/runtime~main.2f4e2a2d.js",
-    "runtime~main.js.map": "shemSvcollege/github.io/test/static/js/runtime~main.2f4e2a2d.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "shemSvcollege/github.io/test/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.35f45b85.chunk.js": "shemSvcollege/github.io/test/static/js/2.35f45b85.chunk.js",
-    "static/js/2.35f45b85.chunk.js.map": "shemSvcollege/github.io/test/static/js/2.35f45b85.chunk.js.map",
-    "index.html": "shemSvcollege/github.io/test/index.html",
-    "precache-manifest.f36912091c694720333beaa4e7cefa1d.js": "shemSvcollege/github.io/test/precache-manifest.f36912091c694720333beaa4e7cefa1d.js",
-    "service-worker.js": "shemSvcollege/github.io/test/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "shemSvcollege/github.io/test/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.af913e6d.chunk.css.map": "shemSvcollege/github.io/test/static/css/main.af913e6d.chunk.css.map"
+    "main.css": "shemSvcollege.github.io/Test/static/css/main.af913e6d.chunk.css",
+    "main.js": "shemSvcollege.github.io/Test/static/js/main.d125d040.chunk.js",
+    "main.js.map": "shemSvcollege.github.io/Test/static/js/main.d125d040.chunk.js.map",
+    "runtime~main.js": "shemSvcollege.github.io/Test/static/js/runtime~main.51200028.js",
+    "runtime~main.js.map": "shemSvcollege.github.io/Test/static/js/runtime~main.51200028.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "shemSvcollege.github.io/Test/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.8f412972.chunk.js": "shemSvcollege.github.io/Test/static/js/2.8f412972.chunk.js",
+    "static/js/2.8f412972.chunk.js.map": "shemSvcollege.github.io/Test/static/js/2.8f412972.chunk.js.map",
+    "index.html": "shemSvcollege.github.io/Test/index.html",
+    "precache-manifest.492e74fe3b44d7b4821c7bdf81d8e936.js": "shemSvcollege.github.io/Test/precache-manifest.492e74fe3b44d7b4821c7bdf81d8e936.js",
+    "service-worker.js": "shemSvcollege.github.io/Test/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "shemSvcollege.github.io/Test/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.af913e6d.chunk.css.map": "shemSvcollege.github.io/Test/static/css/main.af913e6d.chunk.css.map"
   }
 }
