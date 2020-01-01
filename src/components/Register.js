@@ -27,7 +27,6 @@ export default function Register(props) {
             <select className='custom-select' onChange={(e)=>{setOption(e.target.value)}}>
                 <option value='qa'>בדיקות תוכנה</option>
                 <option value='fe'>פיתוח תוכנה</option>
-                <option value='dev'>DEVOPS</option>
                 <option value='it'>ניהול רשתות</option>
                 <option value='none'>אחר</option>
             </select> <br />

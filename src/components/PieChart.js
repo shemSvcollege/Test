@@ -6,57 +6,84 @@ export default class PieChart extends Component {
     constructor(props){
         super(props);
         this.state={
-            labels:['QA','IT','DEVOPS','FRONR-END'],
+            labels:['QA','IT','FRONR-END'],
             datasets: [{
-                data:[2000,5000,2000,1000],
-                backgroundColor:['red','blue','green','purple']
+                data:[20,50,10],
+                backgroundColor:['blue','yellow','green']
             }]
         }
     }
 
     componentWillMount(){
-        if(this.props.option == 'qa'&&this.props.answers < 210){
+        if(this.props.option == 'qa'&&this.props.answers < 150){
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[8000,1000,500,500],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[65,20,0],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
-        else if(this.props.option == 'qa'&&this.props.answers >= 210){
+        else if(this.props.option == 'qa'&&this.props.answers >= 150&&this.props.answers < 300){
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[5000,0,2500,2500],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[75,50,20],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
-        else if(this.props.option == 'it'&&this.props.answers < 210){
+        else if(this.props.option == 'qa'&&this.props.answers >= 300){
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[1000,8000,500,500],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[90,50,80],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
-        else if(this.props.option == 'it'&&this.props.answers >= 210){
+        else if(this.props.option == 'it'&&this.props.answers < 150){
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[0,5000,2500,2500],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[50,65,0],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
-        }       
-        else if(this.props.option == 'fe'&&this.props.answers < 300){
+        }
+        else if(this.props.option == 'it'&&this.props.answers >= 150&&this.props.answers < 300){
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[4000,2500,500,3000],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[50,75,20],
+                    backgroundColor:['blue','yellow','green']
+                }]
+            })   
+        }
+        else if(this.props.option == 'it'&&this.props.answers >= 300){
+            this.setState({
+                labels:this.state.labels,
+                datasets: [{
+                    data:[50,90,80],
+                    backgroundColor:['blue','yellow','green']
+                }]
+            })   
+        }
+        else if(this.props.option == 'fe'&&this.props.answers < 150){
+            this.setState({
+                labels:this.state.labels,
+                datasets: [{
+                    data:[65,30,30],
+                    backgroundColor:['blue','yellow','green']
+                }]
+            })   
+        }
+        else if(this.props.option == 'fe'&&this.props.answers >= 150&&this.props.answers < 300){
+            this.setState({
+                labels:this.state.labels,
+                datasets: [{
+                    data:[85,50,70],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
@@ -64,26 +91,8 @@ export default class PieChart extends Component {
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[0,0,1000,9000],
-                    backgroundColor:['red','blue','green','purple']
-                }]
-            })   
-        }
-        else if(this.props.option == 'dev'&&this.props.answers < 300){
-            this.setState({
-                labels:this.state.labels,
-                datasets: [{
-                    data:[2500,4000,3000,500],
-                    backgroundColor:['red','blue','green','purple']
-                }]
-            })   
-        }
-        else if(this.props.option == 'dev'&&this.props.answers >= 300){
-            this.setState({
-                labels:this.state.labels,
-                datasets: [{
-                    data:[0,0,9000,1000],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[90,80,90],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
@@ -91,8 +100,8 @@ export default class PieChart extends Component {
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[7000,3000,0,0],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[65,20,0],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
@@ -100,8 +109,8 @@ export default class PieChart extends Component {
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[5000,5000,0,0],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[75,50,20],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
@@ -109,12 +118,11 @@ export default class PieChart extends Component {
             this.setState({
                 labels:this.state.labels,
                 datasets: [{
-                    data:[1500,1500,0,7000],
-                    backgroundColor:['red','blue','green','purple']
+                    data:[100,70,90],
+                    backgroundColor:['blue','yellow','green']
                 }]
             })   
         }
-        
     }
     
     render() {
@@ -128,6 +136,9 @@ export default class PieChart extends Component {
                 }}
                 height='80%' width='100%'
                 />
+                <div className='scholarshipBtn' onClick={()=>{this.props.scholarship()}}>
+                    בקשה למלגה
+                </div>
             </div>
         )
     }

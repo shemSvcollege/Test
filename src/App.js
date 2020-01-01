@@ -7,7 +7,8 @@ import PieChart from './components/PieChart';
 import Bottom from './components/Bottom';
 import Introduction from './components/Introduction';
 import {HashRouter as Router , Route , Switch} from 'react-router-dom'
-import {mat} from './QuestionsRep/Repository'
+import {mat} from './QuestionsRep/Repository';
+import Scholarship from './components/Scholarship';
 export default class App extends Component {
   
   constructor(){
@@ -95,11 +96,24 @@ export default class App extends Component {
     })
   }
   
+  scholarshipBTN =()=>{
+    this.setState({
+      questions:this.state.questions,
+      index:-3,
+      lv:this.state.lv,
+      user:this.state.user,
+      answers:this.state.answers
+    })
+  }
 
   show =()=>{
     
     if(this.state.index == -2)
       return <Introduction start={this.nextPage}/>
+
+    else if(this.state.index==-3)
+      return <Scholarship userDetails={this.state.user} grade={this.state.answers}/>
+    
 
     else if(this.state.index==-1)
       return <Register addUser={this.updateUser} />
@@ -116,7 +130,7 @@ export default class App extends Component {
          />
     }
     else{
-      return <PieChart answers={this.state.answers} option = {this.state.user.option}/>
+      return <PieChart answers={this.state.answers} option = {this.state.user.option} scholarship={this.scholarshipBTN}/>
     }
   }
 
